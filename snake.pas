@@ -152,10 +152,10 @@ begin
 	died := false;
 	if (snake_contains(body[1,1] + x, body[1,2] + y)) then
 		died := true;
-	for tmp:=2 to len do
+	for tmp:=1 to len - 1 do
 	begin
-		body[len-tmp+2,1] := body[len-tmp+1,1];
-		body[len-tmp+2,2] := body[len-tmp+1,2];
+		body[len-tmp+1,1] := body[len-tmp,1];
+		body[len-tmp+1,2] := body[len-tmp,2];
 	end;
 	body[1,1] := body[1,1] + x;
 	body[1,2] := body[1,2] + y;
