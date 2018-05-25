@@ -123,7 +123,7 @@ procedure generate_new;
 var x,y:integer;
 begin
 	repeat
-		x := random(78)+1;
+		x := random(78)+2;
 		y := random(19)+4;
 	until not snake_contains(x,y);
 	bombx := x;
