@@ -89,7 +89,7 @@ begin
 	drawbox(1,11,80,3,'');
 	gotoxy(37,12);
 	textcolor(lightred);
-	write('You died!');
+	write('Game over!');
 	textcolor(lightgray);
 	gotoxy(1,25);
 	halt;
